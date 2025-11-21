@@ -25,12 +25,22 @@ body {
     background: linear-gradient(to bottom, #E4E4E4, #CBCBCB);
     background-attachment: fixed;
     background-repeat: no-repeat;
+    padding: 2.25% 3%;
 }
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
+
+.navbar {
+    background: #000000;
+}
+
+.navbar svg {
+    fill: #FFFFFF;
+    width: 5rem;
+}
 
 
 /******************************************
