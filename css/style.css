@@ -21,15 +21,17 @@
 /* BASE STYLES
 /*******************************************/
 
-body {}
+body {
+    background: linear-gradient(to bottom, #E4E4E4, #CBCBCB);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {}
 
-footer {}
 
 /******************************************
 /* ADDITIONAL STYLES
