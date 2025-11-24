@@ -94,7 +94,37 @@ a {
 
 /* MOBILE NAVBAR */
 .hamburger {
+    align-items: flex-end;
+    background: none;
+    border: none;
+    cursor: pointer;
     display: none;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+
+.hamburger-line {
+    background: #000000;
+    height: 0.25rem;
+    transition: all 0.3s ease;
+    transform-origin: center;
+    width: 3rem;
+}
+
+.hamburger-line:nth-child(2) {
+    width: 2.25rem;
+}
+
+.hamburger.active .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translateY(0.625rem) translateX(0.25rem);
+}
+
+.hamburger.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translateY(-0.625rem) translateX(0.25rem);
 }
 
 .mobile-menu {
@@ -131,13 +161,57 @@ a {
 /* LARGE LAPTOP */
 @media screen and (max-width: 1366px) {
     html {
-        font-size: 85%;
+        font-size: 70%;
     }
 
 }
 
+/* SMALL LAPTOP */
+@media screen and (max-width: 1280px) {
+    html {
+        font-size: 60%;
+    }
+
+    .navbar {
+        width: 91%;
+    }
+}
+
+/* TABLET */
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 52.5%;
+    }
+
+    .navbar {
+        top: 3.75rem;
+        width: 88%;
+    }
+}
+
+/* PHONE */
 @media screen and (max-width: 500px) {
+    html {
+        font-size: 40%;
+    }
+
     body {
         padding: 5rem;
+    }
+
+    .navbar {
+        padding: 0.75rem 1.5rem 0.75rem 3.75rem;
+    }
+
+    .nav-right {
+        padding: 1.25rem 0.5rem;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
     }
 }
