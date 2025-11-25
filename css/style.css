@@ -131,19 +131,34 @@ a {
     transform: rotate(-45deg) translateY(-0.625rem) translateX(0.4rem);
 }
 
+.mobile-menu-overlay {
+    background: #00000084;
+    display: none;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+}
+
+.mobile-menu-overlay.active {
+    display: block;
+}
+
 .mobile-menu {
     background: #FFFFFF;
     display: flex;
     flex-direction: column;
-    gap: 2.75rem;
+    gap: 6rem;
     height: 100vh;
     padding: 3.75rem 3rem 0 3rem;
     position: fixed;
-    right: 0;
+    right: -100%;
     top: 0;
-    transition: right 0.3s ease;
+    transition: right 0.5s ease;
     width: 70%;
-    z-index: 1001;
+    z-index: 1002;
 }
 
 .mobile-menu.active {
@@ -156,7 +171,7 @@ a {
     display: flex;
     gap: 1.25rem;
     justify-content: flex-start;
-    margin-bottom: 2.25rem;
+    margin-bottom: 0.25rem;
     padding-bottom: 1.75rem;
 }
 
@@ -177,12 +192,12 @@ a {
 }
 
 .mobile-nav-item svg {
-    width: 4rem;
+    width: 4.5rem;
 }
 
 .mobile-nav-item a {
     color: #878A99;
-    font-size: 3rem;
+    font-size: 3.5rem;
 }
 
 
