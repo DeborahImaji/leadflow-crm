@@ -35,7 +35,7 @@ body {
     background-repeat: no-repeat;
     color: #000000;
     font-family: "Outfit", sans-serif;
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 5.5rem;
 }
 
 a {
@@ -198,6 +198,18 @@ a {
 .mobile-nav-item a {
     color: #878A99;
     font-size: 3.5rem;
+}
+
+
+
+/* DASHBOARD */
+.dashboard {
+    padding: 11.75rem 0;
+}
+
+h1 {
+    font-size: 8.75rem;
+    font-weight: 400;
 }
 
 

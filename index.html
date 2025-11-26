@@ -93,9 +93,9 @@
         </div>
     </div>
 
-    <main>
+    <main class="dashboard">
         <section class="dash-header">
-            <h1>Dashboard Overview</h1>
+            <h1>DASHBOARD</h1>
             <div class="dash-summary">
                 <div class="dash-stat">
                     <h4>Total Leads</h4>
@@ -117,10 +117,36 @@
         <section class="dash-content">
             <h2>Recent Leads</h2>
 
-            <div class="dash-leads">
-                <div class="dash-names"></div>
-                <div class="dash-emails"></div>
+            <div class="dash-table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="recentLeadsTable">
+                        <tr>
+                            <td>John Doe</td>
+                            <td>john@example.com</td>
+                            <td><span class="status-badge">New</span></td>
+                        </tr>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>john@example.com</td>
+                            <td><span class="status-badge">New</span></td>
+                        </tr>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>john@example.com</td>
+                            <td><span class="status-badge">New</span></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+
+            <a href="leads.html">View All Leads</a>
         </section>
     </main>
 
