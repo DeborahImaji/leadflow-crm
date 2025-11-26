@@ -132,7 +132,7 @@ a {
 }
 
 .mobile-menu-overlay {
-    background: #00000084;
+    background: #000000c1;
     display: none;
     height: 100vh;
     left: 0;
@@ -204,12 +204,35 @@ a {
 
 /* DASHBOARD */
 .dashboard {
-    padding: 11.75rem 0;
+    padding: 11rem 0;
 }
 
 h1 {
-    font-size: 8.75rem;
-    font-weight: 400;
+    font-size: 8.25rem;
+    font-weight: 350;
+}
+
+.dash-header {
+    align-items: center;
+    display: flex;
+    gap: 7.5rem;
+}
+
+.dash-summary {
+    align-items: center;
+    display: flex;
+    gap: 7.5rem;
+    text-align: center;
+}
+
+.dash-stat h4 {
+    font-size: 2.5rem;
+    font-weight: 250;
+    margin: 0;
+}
+
+.dash-stat span {
+    font-size: 5rem;
 }
 
 
@@ -232,12 +255,26 @@ h1 {
     .nav-link {
         padding: 1rem 5.5rem;
     }
+
+    /* DASHBOARD */
+    .dashboard {
+        padding: 9.5rem 0;
+    }
+
+    h1 {
+        font-size: 7rem;
+    }
 }
 
 /* LARGE LAPTOP */
 @media screen and (max-width: 1366px) {
     html {
         font-size: 70%;
+    }
+
+    /* DASHBOARD */
+    h1 {
+        font-size: 6rem;
     }
 
 }
@@ -251,6 +288,15 @@ h1 {
     .navbar {
         width: 91%;
     }
+
+    /* DASHBOARD */
+    .dashboard {
+        padding: 9.75rem 1.5rem;
+    }
+
+    h1 {
+        font-size: 5.5rem;
+    }
 }
 
 /* TABLET */
@@ -262,6 +308,15 @@ h1 {
     .navbar {
         top: 3.75rem;
         width: 88%;
+    }
+
+    /* DASHBOARD */
+    .dashboard {
+        padding: 16rem 1.5rem;
+    }
+
+    h1 {
+        font-size: 6rem;
     }
 }
 
@@ -289,5 +344,14 @@ h1 {
 
     .hamburger {
         display: flex;
+    }
+
+    /* DASHBOARD */
+    .dashboard {
+        padding: 8rem 0;
+    }
+
+    h1 {
+        font-size: 5.25rem;
     }
 }
